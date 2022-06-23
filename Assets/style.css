@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fffced;
+}
+
+.header {
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #859aaf;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+nav {
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #859aaf;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  float: right;
+  align-content: flex-end;
+}
+
+nav ul li {
+  list-style-type:none;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.hotKeyList{
+  justify-content: space-between;
+
+}
+
+.sectionHead {
+  text-align: center;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 64px;
+}
+.header h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.header h3 
+{
+  display: inline-block;
+  font-size: 48px;
+  color: #e7eeef;
+  font-family: 'Oswald', sans-serif;
+}
+.header div {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.header div ul {
+  list-style-type: none;
+}
+
+.header div ul li {
+  display: inline-block;
+  margin-left: 25px;
+  
+}
+
+a {
+  color: #e7eeef;
+  text-decoration: solid;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titlePhrase
+{
+  color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.introName
+{
+  color:black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projects {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+  background-image: url"assets/images/magnify.jpg";
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.aboutMe {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.reachOut {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.projects img {
+  max-height: 200px;
+}
+
+.aboutMe img {
+  max-height: 200px;
+}
+
+.reachOut img {
+  max-height: 200px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: var(--default-color);
+  border: none;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: var(--emphasis-color);
+  color: var(--default-color);
+}
+.btn:focus {
+  outline: 1px dashed var(--fifth-color);
+  outline-offset: 3px;
+}
+
+/* Contact me section */
+.contact {
+  background-color: var(--tertiary-color);
+  padding: 30px 25px;
+  color: var(--secondary-color);
+}
+.contact-form {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.contact-form fieldset {
+  background: var(--secondary-color);
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 30%;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+.contact-form button {
+  font-family: fira-sans, sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--emphasis-color);
+  outline-width: 0;
+  transition: All 0.5s ease-in;
+  -webkit-transition: All 0.5s ease-in;
+  -moz-transition: All 0.5s ease-in;
+  -o-transition: All 0.5s ease-in;
+}
+.contact-form button:hover {
+  border: 0;
+  text-transform: uppercase;
+  background: var(--emphasis-color);
+  color: var(--default-color);
+}
+.f-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.f-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto 5px auto;
+  padding: 30px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .header {
+    background: #53a1a3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
