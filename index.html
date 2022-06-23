@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fyu6mjd.css">
+
 </head>
 <body>
 <section class="header">
+<div>
     <h1 class="titlePhrase">Welcome,</h1>
     <h2 class="introName">My Name Is Tommy Alvarado.</h2>
+</div>
     <h3></h3>
     <nav>
-        <div class="hotKeyList">
+        <!-- <div class="hotKeyList"> -->
         <ul>
             <li>
                 <a href="#projects">Projects</a>
@@ -25,34 +30,41 @@
                 <a href="#reachOut">Contact Me</a>
             </li>
         </ul>
-    </div>
+    <!-- </div> -->
     </nav>
 </section>
 
 <section class="content">
-    <article id="projects" class="projects">
-        <h2 class="sectionHead">Projects</h2>
-        <img src="assets/images/ProjectDiplayImage.jpg" alt="project image placeholder" width="250" height="300" class="float-right"/>
-        <p class="sectionText">
-            During my time within the coding bootcamp I have accrued many projects that I have participated in, and here is a sample.
-        </p>
-    </article>
-
+    
     <article id="aboutMe" class="aboutMe">
         <h2 class="sectionHead">About Me</h2>
-        <img src="assets/images/windingroad.jpg" alt="winding road with car" width="250" height="300" class="float-right"/>
+        <!-- <img src="assets/images/windingroad.jpg" alt="winding road with car" width="250" height="300" class="float-right"/> -->
         <p>
             Currently, I am a Business Analyst based in Utah, and am pursuing my Computer Engineering degree at Utah Valley University. I am also going through the coding bootcamp through University of Utah. I am to become a full stack developer.
         </p>
     </article>
-
+    
+    <article id="projects" class="projects">
+        <h2 class="sectionHead">Projects</h2>
+    <div class="highlight">
+        <p class="sectionText">
+            During my time within the coding bootcamp I have accrued many projects that I have participated in, and here is a sample.
+        </p>
+        <img src="assets/images/ProjectDiplayImage.jpg" alt="project image placeholder" width="250" height="300" class="float-right"/>
+    </div>
+    <div class="other-images">
+        <img src="assets/images/magnify.jpg" alt="project image placeholder" width="250" height="300" class="float-right"/>
+        <img src="assets/images/windingroad.jpg" alt="project image placeholder" width="250" height="300" class="float-right"/>
+    </div>
+    </article>
+    
     <article id="reachOut" class="reachOut">
         <h2 class="sectionHead">Contact Me</h2>
-        <img src="assets/images/magnify.jpg" alt="magnifying glass over keyboard" width="250" height="300" class="float-right"/>
+        <!-- <img src="assets/images/magnify.jpg" alt="magnifying glass over keyboard" width="250" height="300" class="float-right"/> -->
         <p>
             Please Feel Free To Reach Out
         </p>
-        <div class="contact=form">
+        <div class="contact-form">
         <fieldset>
             <h3 class="f-subtitle">
                 Hello World

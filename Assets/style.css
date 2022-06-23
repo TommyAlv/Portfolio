@@ -13,6 +13,8 @@ body {
   font-family: 'Oswald', sans-serif;
   background-color: #859aaf;
   color: black;
+  display: flex;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -29,8 +31,8 @@ nav {
 }
 
 nav ul {
-  float: right;
-  align-content: flex-end;
+  /* float: right; */
+  align-content: right;
 }
 
 nav ul li {
@@ -81,6 +83,41 @@ nav ul li {
   
 }
 
+.highlight {
+  display: flex;
+  position: relative;
+  align-items:center;
+  flex-direction: column;
+}
+
+.highlight img {
+  width: 400px;
+  height: auto;
+
+}
+
+.highlight img:hover {
+  width: 100%;
+  height: 100%;
+}
+
+.other-images {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.other-images img {
+  width: 300px;
+  height: auto;
+}
+
+.other-images img:hover {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   color: #e7eeef;
   text-decoration: solid;
@@ -114,7 +151,6 @@ p {
 }
 
 .content {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,11 +178,16 @@ p {
   padding-right: 20px;
 }
 
+.sectionText {
+  font-family: 'Oswald', sans-serif;
+}
+
 .projects {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
-  position: relative;
+  width: 50%;
+  /* position: relative; */
   flex: 1;
   overflow: hidden;
   margin: auto;
@@ -161,6 +202,8 @@ p {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
+  width: 50%;
+  flex: 1;
   font-family: 'Oswald', sans-serif;
   background-color: transparent;
   color: black;
@@ -171,14 +214,17 @@ p {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
+  width: 50%;
+  flex: 1;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
   background-color: transparent;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .projects img {
-  max-height: 200px;
+  max-width: 90%;
 }
 
 .aboutMe img {
@@ -229,12 +275,12 @@ p {
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
 }
 .contact-form input,
 .contact-form textarea {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .contact-form input,
 .contact-form textarea,
@@ -250,7 +296,7 @@ p {
 }
 
 .contact-form button {
-  font-family: fira-sans, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
   border: none;
@@ -302,11 +348,22 @@ p {
   .header {
     background: #53a1a3;
   }
+  .aboutMe,.projects,.reachOut {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     background-color: #bb8588;
+  }
+  .highlight img {
+    width: 100%;
+    height: 100%;
+  }
+  .other-images {
+    width: 80%;
+    height: 80%;
   }
 }
 
@@ -314,7 +371,19 @@ p {
   .sample-img {
     background-color: #8ac4ff;
   }
+  .aboutMe,.projects,.reachOut {
+    width: 100%;
+  }
+  .highlight img {
+    width: 100%;
+    height: 100%;
+  }
+  .other-images {
+    width: 80%;
+    height: 80%;
+  }
 }
+
 
 .footer {
   padding: 30px;
