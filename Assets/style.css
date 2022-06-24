@@ -4,6 +4,21 @@
   margin: 0;
 }
 
+.hero {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /* Will include avatar image here */
+  background-image: url(images/volcano.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  
+}
+
+
+
 body {
   background-color: #fffced;
 }
@@ -28,6 +43,10 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   align-items: center;
   justify-content: space-between;
+}
+
+.navlist {
+  color: black;
 }
 
 nav ul {
@@ -83,6 +102,29 @@ nav ul li {
   
 }
 
+.box {
+  position: relative;
+  display: inline-block;
+}
+
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+  text-align: center;
+  width: 60%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  background: #859aaf;
+  
+}
+
+
+
+
 .highlight {
   display: flex;
   position: relative;
@@ -104,7 +146,7 @@ nav ul li {
   height: 100%;
 }
 
-.other-images {
+.other-images-second {
   display: flex;
   position: relative;
   align-items: center;
@@ -113,14 +155,35 @@ nav ul li {
   
 }
 
-.other-images img {
+.other-images-third {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction:column-reverse;
+  padding: 2.5%;
+  
+}
+
+.other-images-second img {
   width: 300px;
   height: auto;
   border: #2c3e50 solid 4px;
   border-radius: 5%;
 }
 
-.other-images img:hover {
+.other-images-third img {
+  width: 300px;
+  height: auto;
+  border: #2c3e50 solid 4px;
+  border-radius: 5%;
+}
+
+.other-images-second img:hover {
+  width: 100%;
+  height: 100%;
+}
+
+.other-images-third img:hover {
   width: 100%;
   height: 100%;
 }
@@ -195,6 +258,7 @@ p {
   height: 300px;
   width: 50%;
   border: #2c3e50 solid 4px;
+  border-radius: 50px;
   flex: 1;
   overflow: hidden;
   margin: auto;
@@ -209,6 +273,7 @@ p {
   margin-bottom: 20px;
   padding: 50px;
   border: #2c3e50 solid 4px;
+  border-radius: 50px;
   height: 300px;
   width: 50%;
   flex: 1;
@@ -223,6 +288,7 @@ p {
   padding: 50px;
   height: 300px;
   border: #2c3e50 solid 4px;
+  border-radius: 50px;
   width: 50%;
   flex: 1;
   font-family: 'Oswald', sans-serif;
@@ -280,7 +346,7 @@ p {
 .contact-form fieldset {
   background: var(--secondary-color);
   border: 0 none;
-  border-radius: 0px;
+  border-radius: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
@@ -357,15 +423,30 @@ p {
   .header {
     background: #53a1a3;
   }
+  nav {
+    background-color: #859aaf;
+  }
+
+
   .aboutMe,.projects,.reachOut {
     width: 80%;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    background-color: #bb8588;
+    background-color: #a3c3c6;
   }
+
+  .header {
+    background-color: #859aaf;
+  }
+
+  a {
+    color: black;
+  }
+
   .highlight img {
     width: 100%;
     height: 100%;
