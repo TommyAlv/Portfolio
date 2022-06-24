@@ -11,6 +11,6 @@
 For this challenge, I created a portfolio website that has a few placeholders for items I do not have yet that will be updated later on. I have addressed all of the requirements that I could. 
 
 ## Screenshot
-<img width="1920" alt="Screen Shot of Portfolio Site" src=""/>
-<h2> Link </h2>
-Link to the deployed website: 
+![screenshot](./assets/screenshots/PortfolioScreenshot.png)
+## Link
+Link to the deployed website: [Here](https://tommyalv.github.io/Portfolio/)

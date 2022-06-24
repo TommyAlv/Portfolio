@@ -123,9 +123,7 @@ nav ul li {
   
 }
 
-
-
-
+/* Meant to enlarge first application image for criteria */
 .highlight {
   display: flex;
   position: relative;
@@ -141,7 +139,7 @@ nav ul li {
   border-radius: 5%;
 
 }
-
+/* On Hover, image expands to 100% size */
 .highlight img:hover {
   width: 100%;
   height: 100%;
