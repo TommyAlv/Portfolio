@@ -67,6 +67,7 @@ nav ul li {
 
 .sectionHead {
   text-align: center;
+  text-decoration-line: underline;
 }
 
 .header h1 {
@@ -250,6 +251,7 @@ p {
 
 .sectionText {
   font-family: 'Oswald', sans-serif;
+  align-items: center;
 }
 
 .projects {
@@ -264,7 +266,6 @@ p {
   margin: auto;
   font-family: 'Oswald', sans-serif;
   background-color: transparent;
-  background-image: url"assets/images/magnify.jpg";
   color: black;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -332,7 +333,7 @@ p {
   outline-offset: 3px;
 }
 
-/* Contact me section */
+/* Contact me section - assistance from Codepen Website*/
 .contact {
   background-color: var(--tertiary-color);
   padding: 30px 25px;
